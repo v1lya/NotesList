@@ -1,0 +1,24 @@
+<div class="buttons-list">
+  <button type="button" class="button" mat-raised-button (click)="onAddNewNote()">
+    <mat-icon>post_add</mat-icon>
+    Add Note</button>
+</div>
+<hr>
+<mat-tab-group mat-align-tabs="center" (selectedTabChange)="tabChanged($event)">
+  <mat-tab label="Notes">
+    <hr class="list-tabs">
+    <div class="dragndrop-list" cdkDropList (cdkDropListDropped)="drop($event)">
+      <app-note-item
+        class="dragndrop-box" cdkDrag
+        *ngFor="let activeNoteEl of activeNotes; let i = index" [activeNote]="activeNoteEl" [activeNoteIndex]="i"></app-note-item>
+    </div>
+  </mat-tab>
+  <mat-tab label="Done">
+    <hr class="list-tabs">
+    <div class="dragndrop-list" cdkDropList (cdkDropListDropped)="drop($event)" *ngIf="selectedTabIndex === 1">
+      <p style="text-align: center">This feature is expected to be implemented in the next release.
+        <br>We do apologize for the inconvenience.
+      </p>
+    </div>
+  </mat-tab>
+</mat-tab-group>

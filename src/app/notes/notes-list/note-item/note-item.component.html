@@ -1,0 +1,10 @@
+<a [routerLink]="[activeNoteIndex]" class="item">
+  <mat-card>
+    <h2>{{activeNote.name}}</h2>
+    <p>{{activeNote.description | shorten: 15}}</p>
+  </mat-card>
+</a>
+
+
+
+

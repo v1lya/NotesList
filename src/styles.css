@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+a {
+  color: lightgrey;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+p {
+  font-size: 1.1rem;
+  margin: 1rem 0!important;
+}
+h2 {
+  height: 20px!important;
+  margin-top: 0.75rem!important;
+  margin-bottom: 0.7rem!important;
+}
+.button {
+  color: lightgrey!important;
+  height: 36px!important;
+}
+.button:hover {
+  color: white!important;
+  transform: scale(1.05);
+  transition: color 0.3s ease-in-out;
+}
+mat-form-field.mat-form-field {
+  font-size: 1.2rem;
+}
+.mat-tab-header {
+  border-bottom: transparent;
+}
+.mat-tab-label .mat-tab-label-content {
+  font-size: 1.2rem;
+}
+.panel-alert {
+  height: 30vh;
+  width: 30vw;
+}
+.mat-simple-snackbar {
+  font-size: 1.1rem;
+}
+.mat-button {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 599px) {
+  .panel-alert {
+    height: auto;
+    width: auto;
+  }
+}

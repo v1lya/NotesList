@@ -1,0 +1,31 @@
+.item {
+  width: 100%;
+  margin: 1rem 2rem;
+}
+.item:hover {
+  transform: scale(1.02);
+}
+h2 {
+  color: lightgrey;
+}
+p {
+  color: lightgrey;
+}
+h2:hover {
+  color: white;
+}
+p:hover {
+  color: white;
+}
+
+@media screen and (max-width: 599px) {
+  .item {
+    margin: 1rem 0;
+  }
+  h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
