@@ -1,0 +1,26 @@
+.header {
+  padding: 0 3rem;
+}
+.brand {
+  font-size: 1.5rem;
+  color: white;
+}
+.brand-slogan {
+  font-size: 1.5rem;
+  color: lightgrey;
+}
+.brand-slogan:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+@media screen and (max-width: 599px) {
+  .header {
+    padding: 0 2rem;
+  }
+  .brand {
+    font-size: 1.2rem;
+  }
+  .brand-slogan {
+    font-size: 1.2rem;
+  }
+}

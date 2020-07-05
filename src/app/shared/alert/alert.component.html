@@ -1,0 +1,10 @@
+<h2 mat-dialog-title style="text-align: center">Seriously?</h2>
+<mat-dialog-content>
+  <h2 class="alert-note">Gonna delete <span class="alert-note-name">{{data.name ? data.name : 'empty'}}</span> note?</h2>
+</mat-dialog-content>
+<mat-dialog-actions class="alert-buttons">
+  <button type="button" mat-raised-button color="primary" class="button" [mat-dialog-close]="true">
+    Sure!</button>
+  <button type="button" mat-raised-button class="button" [mat-dialog-close]="false">
+    No way!</button>
+</mat-dialog-actions>

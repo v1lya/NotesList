@@ -1,0 +1,27 @@
+.start-block-title {
+  box-sizing: border-box;
+  text-align: end;
+}
+.bg-new-note {
+  margin: 3rem 2rem 0rem 6rem;
+  background-image: url("src/assets/notepad-cofee.jpg");
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-new-note:hover {
+  transform: scale(1.02);
+}
+@media screen and (max-width: 599px) {
+  .start-block-title {
+    margin: 0;
+    text-align: center;
+  }
+  .bg-new-note {
+    margin: 0;
+    height: 25vh;
+    width: auto;
+  }
+
+}

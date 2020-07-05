@@ -1,0 +1,9 @@
+<div class="start-block-title">
+  <h2>Let's note!</h2>
+</div>
+<hr>
+<a routerLink="new">
+  <div class="bg-new-note"></div>
+</a>
+<hr *ngIf="isMobile">
+<app-notes-list *ngIf="isMobile"></app-notes-list>

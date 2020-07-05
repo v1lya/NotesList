@@ -1,0 +1,31 @@
+.alert-note {
+  text-align: center;
+  padding-top: 1rem;
+}
+.alert-note-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: darkorchid;
+}
+.button {
+  font-size: 1.1rem;
+}
+.alert-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+@media screen and (max-width: 599px) {
+  .alert-note {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .alert-note-name {
+    font-size: 1.4rem;
+  }
+  .alert-buttons {
+    padding: 2rem 0;
+  }
+}

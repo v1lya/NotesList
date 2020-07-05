@@ -1,0 +1,24 @@
+.notes-desktop {
+  display: flex;
+  flex-direction: row;
+}
+.notes-list {
+  width: 30%;
+}
+.notes-details {
+  width: 70%;
+}
+hr {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .notes-desktop {
+    flex-direction: column-reverse;
+  }
+  .notes-mobile {
+    width: 100%;
+  }
+  hr {
+    display: block;
+  }
+}

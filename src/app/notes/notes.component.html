@@ -1,0 +1,14 @@
+<div class="notes-desktop" *ngIf="!isMobile">
+  <div class="notes-list">
+    <app-notes-list></app-notes-list>
+  </div>
+  <div class="notes-details">
+    <router-outlet></router-outlet>
+    <hr>
+  </div>
+</div>
+<div class="notes-mobile" *ngIf="isMobile">
+  <router-outlet></router-outlet>
+  <hr>
+</div>
+
