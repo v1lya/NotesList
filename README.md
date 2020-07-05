@@ -1,5 +1,12 @@
 # NotesList
 
+List of notes with an options to (without back-end):
+1. add/delete/edit a note. 
+2. drag'n'drop notes.
+3. mark note as done.
+4. send the note details by email.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## Development server
